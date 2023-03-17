@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296605823505",
+    "project_id": "rubooked-721f5",
+    "storage_bucket": "rubooked-721f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296605823505:android:b8eca2c5ac612a823237b0",
+        "android_client_info": {
+          "package_name": "com.example.rubooked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296605823505-e9lubcd44vkjvcthii0mvsbjel6g79r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAJ9zKuEUkyuTwEZw1cdAyD47bKK8H7fw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296605823505-e9lubcd44vkjvcthii0mvsbjel6g79r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

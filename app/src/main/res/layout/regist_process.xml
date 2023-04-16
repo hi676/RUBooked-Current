@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/gradient" android:id="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="360dp"
+                android:layout_height="43dp"
+                android:background="@color/white"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="25dp" android:layout_marginEnd="26dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/baseline_home_24"
+                android:id="@+id/homeview"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.135" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_calendar_month_24"
+                android:id="@+id/calendarview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.343"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_person_24"
+                android:id="@+id/profileview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.966"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.857"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_location_on_24"
+                android:id="@+id/navview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_logout_24"
+                android:id="@+id/logoutview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.679"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rubookdLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                tools:text="RUBOOK'D"
+                android:backgroundTint="#351818" android:foregroundTint="#510707" android:shadowColor="#290404"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="176dp"
+                android:layout_marginEnd="176dp" app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+                android:text="Registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/registration"
+                android:textColor="#AC1E1E" android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.183"/>
+        <Button
+                android:text="Classes"
+                android:layout_width="253dp"
+                android:layout_height="64dp" android:id="@+id/Classes"
+                android:textColor="#000000" android:backgroundTint="#FFFFFF"
+                android:textAlignment="viewStart" app:cornerRadius="25px"
+                app:layout_constraintTop_toTopOf="@+id/rubookdLogo"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintVertical_bias="0.322"/>
+        <Button
+                android:text="Timings"
+                android:layout_width="253dp"
+                android:layout_height="65dp" android:id="@+id/classes"
+                android:textColor="#000000" android:backgroundTint="#FFFFFF"
+                android:textAlignment="viewStart" app:cornerRadius="25px"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.487" app:layout_constraintVertical_bias="0.489"/>
+        <Button
+                android:text="Confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/Confirm"
+                android:backgroundTint="#F5A522" app:cornerRadius="50px"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                app:layout_constraintTop_toTopOf="@+id/rubookdLogo" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintVertical_bias="0.725" app:layout_constraintStart_toStartOf="parent"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

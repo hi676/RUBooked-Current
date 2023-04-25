@@ -67,13 +67,13 @@ public class Login extends AppCompatActivity {
                                 boolean emailVerified = user.isEmailVerified();
                                 if (emailVerified) {
                                     if (task.isSuccessful()) {
-                                        Toast t = Toast.makeText(getApplicationContext(),
-                                                "Login successful!!",
-                                                Toast.LENGTH_LONG);
-                                        t.setGravity(Gravity.FILL_HORIZONTAL, 0, 0);
-                                        t.show();
+//                                        Toast t = Toast.makeText(getApplicationContext(),
+//                                                "Login successful!!",
+//                                                Toast.LENGTH_LONG);
+//                                        t.setGravity(Gravity.FILL_HORIZONTAL, 0, 0);
+//                                        t.show();
 
-                                        Intent intent = new Intent(Login.this, WelcomeScreen.class);
+                                        Intent intent = new Intent(Login.this, Register.class);
                                         startActivity(intent);
                                     } else {
                                         FirebaseException e = (FirebaseException) task.getException();

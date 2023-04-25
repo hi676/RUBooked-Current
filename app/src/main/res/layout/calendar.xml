@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="360dp"
+                android:layout_height="43dp"
+                android:background="@color/white"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="25dp" android:layout_marginEnd="26dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="0dp" app:srcCompat="@drawable/baseline_home_24"
+                android:id="@+id/homeview"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.132" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="24dp"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_calendar_month_24"
+                android:id="@+id/calendarview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.338"
+                android:tint="#FF9800"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_person_24"
+                android:id="@+id/profileview"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.966"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.847"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_location_on_24"
+                android:id="@+id/navview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.498"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/baseline_logout_24"
+                android:id="@+id/logoutview"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.677"/>
+        <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/rubookdLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                tools:text="RUBOOK'D"
+                android:backgroundTint="#351818" android:foregroundTint="#510707" android:shadowColor="#290404"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="176dp"
+                android:layout_marginEnd="176dp" app:layout_constraintEnd_toEndOf="parent"/>
+        <CalendarView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/calendarSelect"
+                app:layout_constraintTop_toTopOf="@+id/rubookdLogo"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintVertical_bias="0.429" android:background="#FDF7F7"/>
+        <TextView
+                android:text="Pease Select Date and Time to Book!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/rubookdLogo"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.512"
+                app:layout_constraintVertical_bias="0.135" android:textColor="#CC372B" android:visibility="visible"
+                android:textSize="16sp"/>
+        <Button
+                android:text="Continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/continueButton2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/toolbar" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintVertical_bias="0.842" android:backgroundTint="#F5A522" app:cornerRadius="50px"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
